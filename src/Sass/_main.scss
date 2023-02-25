@@ -1,0 +1,9 @@
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto auto 0 auto;
+    width: 510px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px 5px $Lightlavender;
+}

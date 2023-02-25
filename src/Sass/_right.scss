@@ -1,0 +1,55 @@
+.stu{
+    display: grid;
+    padding: 1.5rem;
+    gap: 1rem;
+
+    &-heading{
+        color: $Darkgrayblue;
+        font-size: 20px;
+    }
+
+    &-score{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .3rem .6rem;
+        border-radius: 6px;
+        font-size: 16.5px;
+        background: $Lightred-varient;
+        color: $Lightred;
+
+        &:nth-child(3){
+            background: $Orangeyyellow-varient;
+            color: $Orangeyyellow;
+        }
+        &:nth-child(4){
+            background: $Greenteal-varient;
+            color: $Greenteal;
+        }
+        &:nth-child(5){
+            background: $Cobaltblue-varient;
+            color: $Cobaltblue;
+        }
+
+        &_left{
+            display: flex;
+            gap: .3rem;
+        }
+
+        & > span{
+            font-size: 15px;
+            color: gray;
+        }
+        &_right{
+            color: $Darkgrayblue;
+        }
+    }
+
+    &-submit{
+        height: 2rem;
+        border-radius: 20px;
+        color: $White;
+        background: $Darkgrayblue;
+        border: none;
+    }
+}

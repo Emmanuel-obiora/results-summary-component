@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Primary colors
+$Lightred: hsl(0, 100%, 67%);
+$Lightred-varient: rgb(250, 246, 246);
+$Orangeyyellow: hsl(39, 100%, 56%);
+$Orangeyyellow-varient: rgb(253, 248, 239);
+$Greenteal: hsl(166, 100%, 37%);
+$Greenteal-varient: hsl(173, 67%, 98%);
+$Cobaltblue: hsl(234, 85%, 45%);
+$Cobaltblue-varient: hsl(235, 52%, 96%);
+
+// Gradients colors
+$Lightslateblue-bg: hsl(252, 100%, 67%);
+$Lightroyalblue-bg: hsl(241, 81%, 54%);
+
+$Violetblue-cir: hsla(256, 72%, 46%, 1);
+$Persianblue-cir: hsla(241, 72%, 46%, 0);
+
+// Neutral colors
+$White: hsl(0, 0%, 100%);
+$Paleblue: hsl(221, 100%, 96%);
+$Lightlavender: hsl(241, 100%, 89%);
+$Darkgrayblue: hsl(224, 30%, 27%);
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
