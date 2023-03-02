@@ -2,11 +2,14 @@ import React from 'react'
 import '../../style.css'
 
 const Left = () => {
+
+    const avgSum = JSON.parse(localStorage.getItem('average'));
+    
     return (
         <section className="left">
             <p>Your Result</p>
             <div className="left-total">
-                <strong>76</strong>
+                <strong>{avgSum}</strong>
                 <span className='left-total_max'>of 100</span>
             </div>
             <h1>Great</h1>

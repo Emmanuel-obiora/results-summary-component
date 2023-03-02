@@ -36,12 +36,14 @@
             gap: .3rem;
         }
 
-        & > span{
+        & > p{
             font-size: 15px;
             color: gray;
         }
         &_right{
             color: $Darkgrayblue;
+            font-size: 17px;
+            font-weight: 700;
         }
     }
 

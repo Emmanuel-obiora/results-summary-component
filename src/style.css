@@ -95,12 +95,14 @@ body {
   display: flex;
   gap: 0.3rem;
 }
-.stu-score > strong {
-  color: hsl(224, 30%, 27%);
-}
-.stu-score_right {
+.stu-score > p {
   font-size: 15px;
   color: gray;
+}
+.stu-score_right {
+  color: hsl(224, 30%, 27%);
+  font-size: 17px;
+  font-weight: 700;
 }
 .stu-submit {
   height: 2rem;

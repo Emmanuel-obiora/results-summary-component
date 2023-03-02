@@ -1,20 +1,24 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../../style.css'
 import data from '../../data.json'
 
 const Right = () => {
 
-    const [score, setScore] = useState({
-        stuScore: ''
-    });
+    function calculate() {
+        const first = document.getElementById('firstNum').innerHTML;
+        const second = document.getElementById('secondNum').innerHTML;
+        const third = document.getElementById('thirdNum').innerHTML;
+        const fourth = document.getElementById('fourthNum').innerHTML;
+        // console.log(first);
+    
+        const averageSum = Math.trunc((+first + +second + +third + +fourth)/4);
+        console.log(averageSum);
 
-    const handleNewScore = (e) => {
-        e.preventDefault();
-        setScore({
-            ...score, [e.target.name]: e.target.value
-        });
-        console.log(info);
+        localStorage.setItem('average', JSON.stringify(averageSum));
+
+        window.location.reload();
     }
+    
 
     return (
         <article className='stu'>
@@ -28,13 +32,13 @@ const Right = () => {
                                 <p>{info.category}</p>                  
                             </div>
 
-                            <span><strong className='stu-score_right' name="stuScore" onChange={handleNewScore}>{info.score}</strong>/100</span>
+                            <p><span className='stu-score_right' id={info.identity}>{info.score}</span>/100</p>
                         </div>
                     )
                 })
             }
 
-            <button type='button' className="stu-submit">Continue</button>
+            <button type='button' className="stu-submit" onClick={calculate}>Continue</button>
         </article>
     )
 }
