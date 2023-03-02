@@ -6,4 +6,10 @@
     height: auto;
     border-radius: 20px;
     box-shadow: 5px 10px 10px 5px $Lightlavender;
+
+    @media(max-width: 37.5rem){
+        width: 310px;
+        grid-template-columns: 1fr;
+        border-radius: 0 0 20px 20px;
+    }
 }

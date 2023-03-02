@@ -24,6 +24,13 @@ body {
   border-radius: 20px;
   box-shadow: 5px 10px 10px 5px hsl(241, 100%, 89%);
 }
+@media (max-width: 37.5rem) {
+  .main {
+    width: 310px;
+    grid-template-columns: 1fr;
+    border-radius: 0 0 20px 20px;
+  }
+}
 
 .left {
   padding: 1.8rem;
@@ -35,6 +42,11 @@ body {
   border-radius: 20px;
   background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   color: hsl(241, 100%, 89%);
+}
+@media (max-width: 37.5rem) {
+  .left {
+    border-radius: 0 0 20px 20px;
+  }
 }
 .left-total {
   display: flex;
@@ -76,19 +88,19 @@ body {
   padding: 0.3rem 0.6rem;
   border-radius: 6px;
   font-size: 16.5px;
-  background: rgb(250, 246, 246);
+  background: rgb(252, 240, 240);
   color: hsl(0, 100%, 67%);
 }
 .stu-score:nth-child(3) {
-  background: rgb(253, 248, 239);
+  background: rgb(252, 244, 230);
   color: hsl(39, 100%, 56%);
 }
 .stu-score:nth-child(4) {
-  background: hsl(173, 67%, 98%);
+  background: hsl(180, 71%, 96%);
   color: hsl(166, 100%, 37%);
 }
 .stu-score:nth-child(5) {
-  background: hsl(235, 52%, 96%);
+  background: hsl(231, 50%, 95%);
   color: hsl(234, 85%, 45%);
 }
 .stu-score_left {
@@ -110,6 +122,10 @@ body {
   color: hsl(0, 0%, 100%);
   background: hsl(224, 30%, 27%);
   border: none;
+  cursor: pointer;
+}
+.stu-submit:hover {
+  background: hsl(234, 85%, 45%);
 }
 
 .attribution {
