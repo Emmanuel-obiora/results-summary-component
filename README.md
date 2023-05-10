@@ -45,6 +45,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Obiora Emmanuel](https://emmanuel-obiora.github.io/portfolio-about-me-/web-content)
+- Website - [Obiora Emmanuel](https://emmanuel-obiora.github.io/portfolio-about-me-/src)
 - Frontend Mentor - [@Emmanuel-obiora](https://www.frontendmentor.io/profile/Emmanuel-obiora)
 - Twitter - [@Miroclesdgenius](https://twitter.com/Miroclesdgenius)
